@@ -8,7 +8,7 @@
 
 **Project repository:** https://github.com/iamnaheed/Cipher-X-Crew-Nasa-Space-App-Challenge-2026
 
-**Live demo:** Not currently deployed. See [Deployment](#deployment) for how to publish the site.
+**Live demo:** https://iamnaheed.github.io/Cipher-X-Crew-Nasa-Space-App-Challenge-2026/
 
 ![NASA Space Apps 2026](https://img.shields.io/badge/NASA%20Space%20Apps-2026-E8933A)
 ![React 19](https://img.shields.io/badge/React-19-61DAFB)
@@ -166,14 +166,11 @@ The website build is verified with `npm run build` and `npm run lint`
 
 ## Deployment
 
-The site is not currently published on GitHub Pages for this repository.
-The prebuilt site is included in `docs/`. To publish it, configure
-GitHub Pages to deploy from the `main` branch and `/docs` folder
-(Settings → Pages → Deploy from a branch → `main` → `/docs`). To update
-the published site after making changes, run `npm run build` and copy
-the generated `dist/` contents into `docs/` before committing. The Real
-Frames viewer fetches its data packs from this repository, so no backend
-hosting is required. The same build can also be hosted on Vercel or Netlify.
+GitHub Actions builds and publishes the site to GitHub Pages whenever
+changes are pushed to `main`. The build includes the pre-generated
+SPHEREx data packs; no backend hosting is required. After the first
+deployment completes, the live demo is available at the URL above. The
+same build can also be hosted on Vercel or Netlify.
 
 ## Limitations
 

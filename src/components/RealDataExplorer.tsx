@@ -104,8 +104,8 @@ interface PackData {
 }
 
 const DATA_BASES = [
-  'backend/static_data',
-  'https://raw.githubusercontent.com/sanaasif1217/cipher-x-crew/main/backend/static_data',
+  `${import.meta.env.BASE_URL}backend/static_data`,
+  'https://raw.githubusercontent.com/iamnaheed/Cipher-X-Crew-Nasa-Space-App-Challenge-2026/main/backend/static_data',
 ];
 
 const GRAY_SIZE = 512;
